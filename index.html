@@ -268,55 +268,75 @@
     <section id="chronologie" class="py-24 bg-slate-50 relative">
         <div class="container mx-auto px-6 max-w-6xl">
             <div class="text-center mb-20">
-                <span class="text-brand-primary font-bold tracking-wider text-sm uppercase">Historique</span>
-                <h2 class="text-4xl font-bold text-slate-900 mt-2 font-serif">De la Pointeuse à l'Algorithme</h2>
-                <p class="text-slate-500 mt-4 max-w-2xl mx-auto">Comprendre l'évolution temporelle de la surveillance au travail est essentiel pour saisir les enjeux actuels.</p>
+                <span class="text-brand-primary font-bold tracking-wider text-sm uppercase">Historique Détaillé</span>
+                <h2 class="text-4xl font-bold text-slate-900 mt-2 font-serif">De la Pointeuse à l'Algorithme : La Frise Complète</h2>
+                <p class="text-slate-500 mt-4 max-w-2xl mx-auto">Cette frise retrace les grandes étapes de la surveillance numérique des salariés, du présentiel jusqu’aux débats actuels autour du télétravail.</p>
             </div>
 
             <div class="relative py-10">
-                <div class="timeline-connector"></div>
+                <div class="timeline-connector" style="
+                    position: absolute;
+                    left: 50%;
+                    top: 0;
+                    bottom: 0;
+                    width: 3px; /* Épaisseur ajustée pour la cohérence */
+                    background: linear-gradient(180deg, #cbd5e1, #4f46e5); /* Dégradé de gris vers la couleur primaire */
+                    transform: translateX(-50%);
+                "></div>
 
                 <div class="relative mb-20 group">
-                    <div class="absolute left-1/2 transform -translate-x-1/2 -mt-3 z-10 w-6 h-6 bg-slate-200 rounded-full border-4 border-white shadow group-hover:bg-brand-primary transition"></div>
+                    <div class="absolute left-1/2 transform -translate-x-1/2 -mt-3 z-10 w-6 h-6 bg-brand-primary rounded-full border-4 border-white shadow group-hover:bg-brand-accent transition"></div>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                         <div class="md:text-right">
-                            <span class="text-6xl font-extrabold text-slate-200 group-hover:text-slate-400 transition duration-500 font-serif">1978</span>
+                            <span class="text-6xl font-extrabold text-slate-200 group-hover:text-brand-primary/50 transition duration-500 font-serif">1980–2000</span>
                         </div>
-                        <div class="glass-card p-8 rounded-2xl bg-white md:-ml-6 z-0 group-hover:translate-x-2 transition border-l-4 border-slate-300">
-                            <h3 class="text-xl font-bold text-slate-900 mb-2">Les Origines & La CNIL</h3>
-                            <p class="text-slate-600 text-sm leading-relaxed">
-                                C'est une pratique ancienne. En France, la loi Informatique et Libertés crée la CNIL, posant le principe que l'informatique ne doit pas porter atteinte à l'identité humaine. La surveillance existe mais reste physique (contremaîtres, pointeuses mécaniques).
+                        <div class="glass-card p-6 rounded-2xl bg-white md:-ml-6 z-0 group-hover:translate-x-2 transition border-l-4 border-brand-primary shadow-lg">
+                            <div class="text-xs font-bold uppercase tracking-wider text-brand-primary mb-2">Phase 1: Les Origines</div>
+                            <h3 class="text-xl font-bold text-slate-900 mb-2">Naissance de la surveillance numérique en présentiel</h3>
+                            <p class="text-slate-600 text-sm leading-relaxed mb-3 text-justify">
+                                Avec l’informatisation des entreprises, apparaissent les premiers dispositifs de contrôle automatisé : badgeuses, suivi de l’activité dans les centres d’appels, contrôle de l’usage des e-mails. Toute la surveillance se fait alors **sur le lieu de travail**.
                             </p>
+                            <div class="text-xs text-slate-500 border-t pt-2 mt-2">
+                                <strong>Acteurs :</strong> Directions, Services RH, Salariés. | <strong>Monde commun :</strong> Faible (on parle surtout d’efficacité).
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="relative mb-20 group">
-                    <div class="absolute left-1/2 transform -translate-x-1/2 -mt-3 z-10 w-6 h-6 bg-slate-200 rounded-full border-4 border-white shadow group-hover:bg-brand-primary transition"></div>
+                    <div class="absolute left-1/2 transform -translate-x-1/2 -mt-3 z-10 w-6 h-6 bg-brand-primary rounded-full border-4 border-white shadow group-hover:bg-brand-accent transition"></div>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-                        <div class="glass-card p-8 rounded-2xl bg-white md:text-right md:-mr-6 z-0 group-hover:-translate-x-2 transition border-r-4 border-indigo-400 md:order-1 order-2">
-                            <h3 class="text-xl font-bold text-slate-900 mb-2">Digitalisation & Droit à la Déconnexion</h3>
-                            <p class="text-slate-600 text-sm leading-relaxed">
-                                Avec l'arrivée du Cloud et des smartphones, le travail devient mobile. En 2016, la France introduit le "Droit à la déconnexion" (Loi El Khomri) pour protéger la vie privée face à l'envahissement numérique professionnel.
+                        <div class="glass-card p-6 rounded-2xl bg-white md:text-right md:-mr-6 z-0 group-hover:-translate-x-2 transition border-r-4 border-purple-500 md:order-1 order-2 shadow-lg">
+                            <div class="text-xs font-bold uppercase tracking-wider text-purple-600 mb-2">Phase 2: Cadre Légal</div>
+                            <h3 class="text-xl font-bold text-slate-900 mb-2">Vie privée au travail et premières limites juridiques</h3>
+                            <p class="text-slate-600 text-sm leading-relaxed mb-3 text-justify">
+                                Des décisions de justice reconnaissent que le salarié a droit au respect de sa vie privée, même au travail. La surveillance informatique (e-mails, fichiers) doit respecter un **principe de proportionnalité**.
                             </p>
+                            <div class="text-xs text-slate-500 border-t pt-2 mt-2">
+                                <strong>Acteurs :</strong> Juges, Juristes, Employeurs. | <strong>Monde commun :</strong> Partiel (accord sur les règles, désaccord sur la limite).
+                            </div>
                         </div>
                         <div class="md:order-2 order-1 md:pl-6">
-                            <span class="text-6xl font-extrabold text-slate-200 group-hover:text-indigo-400 transition duration-500 font-serif">2016</span>
+                            <span class="text-6xl font-extrabold text-slate-200 group-hover:text-purple-500/50 transition duration-500 font-serif">2001–2004</span>
                         </div>
                     </div>
                 </div>
 
                 <div class="relative mb-20 group">
-                    <div class="absolute left-1/2 transform -translate-x-1/2 -mt-3 z-10 w-6 h-6 bg-slate-200 rounded-full border-4 border-white shadow group-hover:bg-brand-primary transition"></div>
+                    <div class="absolute left-1/2 transform -translate-x-1/2 -mt-3 z-10 w-6 h-6 bg-brand-primary rounded-full border-4 border-white shadow group-hover:bg-brand-accent transition"></div>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                         <div class="md:text-right">
-                            <span class="text-6xl font-extrabold text-slate-200 group-hover:text-purple-400 transition duration-500 font-serif">2018</span>
+                            <span class="text-6xl font-extrabold text-slate-200 group-hover:text-indigo-400/50 transition duration-500 font-serif">2010s</span>
                         </div>
-                        <div class="glass-card p-8 rounded-2xl bg-white md:-ml-6 z-0 group-hover:translate-x-2 transition border-l-4 border-purple-400">
-                            <h3 class="text-xl font-bold text-slate-900 mb-2">Tournant RGPD</h3>
-                            <p class="text-slate-600 text-sm leading-relaxed">
-                                Mise en application du Règlement Général sur la Protection des Données. Il impose la "proportionnalité" : la surveillance doit être justifiée et non excessive. Le consentement du salarié est requis, mais difficile à refuser en pratique.
+                        <div class="glass-card p-6 rounded-2xl bg-white md:-ml-6 z-0 group-hover:translate-x-2 transition border-l-4 border-indigo-400 shadow-lg">
+                            <div class="text-xs font-bold uppercase tracking-wider text-indigo-500 mb-2">Phase 3: Digitalisation</div>
+                            <h3 class="text-xl font-bold text-slate-900 mb-2">Développement du suivi informatique (en présentiel uniquement)</h3>
+                            <p class="text-slate-600 text-sm leading-relaxed mb-3 text-justify">
+                                Les entreprises généralisent les tableaux de bord et les indicateurs de performance. Le travail devient piloté par les chiffres et les traces numériques, mais reste **cantonné aux locaux** de l’entreprise.
                             </p>
+                            <div class="text-xs text-slate-500 border-t pt-2 mt-2">
+                                <strong>Acteurs :</strong> Employeurs, Managers, Chercheurs. | <strong>Monde commun :</strong> Partiel (désaccord sur l’ampleur acceptable du suivi).
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -324,33 +344,98 @@
                 <div class="relative mb-20 group">
                     <div class="absolute left-1/2 transform -translate-x-1/2 -mt-3 z-10 w-8 h-8 bg-brand-accent rounded-full border-4 border-white shadow animate-pulse"></div>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-                        <div class="glass-card p-8 rounded-2xl bg-gradient-to-br from-white to-cyan-50 md:text-right md:-mr-6 z-0 group-hover:-translate-x-2 transition border-r-4 border-brand-accent md:order-1 order-2 shadow-xl">
-                            <div class="inline-block px-2 py-1 bg-cyan-100 text-cyan-700 text-xs font-bold rounded mb-2">POINT DE BASCULE</div>
-                            <h3 class="text-xl font-bold text-slate-900 mb-2">L'Explosion Post-Covid</h3>
-                            <p class="text-slate-600 text-sm leading-relaxed">
-                                Le télétravail devient la norme. Privés de vue, les managers se ruent sur les logiciels. <strong>63% des entreprises</strong> s'équipent. La pratique quitte l'exception pour devenir la règle.
+                        <div class="glass-card p-6 rounded-2xl bg-gradient-to-br from-white to-cyan-50 md:text-right md:-mr-6 z-0 group-hover:-translate-x-2 transition border-r-4 border-brand-accent md:order-1 order-2 shadow-xl">
+                            <div class="inline-block px-2 py-1 bg-cyan-100 text-cyan-700 text-xs font-bold rounded mb-2">POINT CHAUD</div>
+                            <h3 class="text-xl font-bold text-slate-900 mb-2">COVID-19 : télétravail massif et première surveillance à distance</h3>
+                            <p class="text-slate-600 text-sm leading-relaxed mb-3 text-justify">
+                                Le travail quitte les locaux pour entrer dans le domicile des salariés. La situation soulève de fortes interrogations : comment contrôler le travail à distance **sans transformer le domicile en lieu de surveillance** ?
                             </p>
+                            <div class="text-xs text-slate-500 border-t pt-2 mt-2">
+                                <strong>Acteurs :</strong> Entreprises, Salariés, Médias, Autorités.
+                            </div>
                         </div>
                         <div class="md:order-2 order-1 md:pl-6">
-                            <span class="text-6xl font-extrabold text-slate-200 group-hover:text-brand-accent transition duration-500 font-serif">2021</span>
+                            <span class="text-6xl font-extrabold text-slate-200 group-hover:text-brand-accent/50 transition duration-500 font-serif">2020</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative mb-20 group">
+                    <div class="absolute left-1/2 transform -translate-x-1/2 -mt-3 z-10 w-8 h-8 bg-brand-accent rounded-full border-4 border-white shadow animate-pulse"></div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                        <div class="md:text-right">
+                            <span class="text-6xl font-extrabold text-slate-200 group-hover:text-brand-accent/50 transition duration-500 font-serif">2020–2021</span>
+                        </div>
+                        <div class="glass-card p-6 rounded-2xl bg-white md:-ml-6 z-0 group-hover:translate-x-2 transition border-l-4 border-brand-accent shadow-xl">
+                            <div class="inline-block px-2 py-1 bg-cyan-100 text-cyan-700 text-xs font-bold rounded mb-2">POINT CHAUD</div>
+                            <h3 class="text-xl font-bold text-slate-900 mb-2">Explosion des logiciels de surveillance des télétravailleurs</h3>
+                            <p class="text-slate-600 text-sm leading-relaxed mb-3 text-justify">
+                                Adoption massive de logiciels de suivi à distance : captures d’écran, compteurs de temps, suivi des frappes clavier, appelés **« bossware »**. Cette surveillance entre dans le foyer et déclenche une controverse publique.
+                            </p>
+                            <div class="text-xs text-slate-500 border-t pt-2 mt-2">
+                                <strong>Acteurs :</strong> Employeurs, Salariés, ONG, Journalistes.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="relative mb-20 group">
+                    <div class="absolute left-1/2 transform -translate-x-1/2 -mt-3 z-10 w-6 h-6 bg-brand-primary rounded-full border-4 border-white shadow group-hover:bg-brand-accent transition"></div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                        <div class="glass-card p-6 rounded-2xl bg-white md:text-right md:-mr-6 z-0 group-hover:-translate-x-2 transition border-r-4 border-green-500 md:order-1 order-2 shadow-lg">
+                            <div class="text-xs font-bold uppercase tracking-wider text-green-600 mb-2">Phase 4: Impacts Humains</div>
+                            <h3 class="text-xl font-bold text-slate-900 mb-2">Études sur les effets psychologiques et éthiques</h3>
+                            <p class="text-slate-600 text-sm leading-relaxed mb-3 text-justify">
+                                Les études montrent que la surveillance à distance peut augmenter le stress, l’hyperconnexion et la perte d’autonomie. Le **brouillage entre vie privée et vie professionnelle** devient un enjeu central.
+                            </p>
+                            <div class="text-xs text-slate-500 border-t pt-2 mt-2">
+                                <strong>Acteurs :</strong> Chercheurs, Institutions publiques. | <strong>Monde commun :</strong> Accord croissant sur l’existence de risques.
+                            </div>
+                        </div>
+                        <div class="md:order-2 order-1 md:pl-6">
+                            <span class="text-6xl font-extrabold text-slate-200 group-hover:text-green-500/50 transition duration-500 font-serif">2021–2022</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="relative mb-20 group">
+                    <div class="absolute left-1/2 transform -translate-x-1/2 -mt-3 z-10 w-6 h-6 bg-brand-primary rounded-full border-4 border-white shadow group-hover:bg-brand-accent transition"></div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                        <div class="md:text-right">
+                            <span class="text-6xl font-extrabold text-slate-200 group-hover:text-orange-500/50 transition duration-500 font-serif">2022–2023</span>
+                        </div>
+                        <div class="glass-card p-6 rounded-2xl bg-white md:-ml-6 z-0 group-hover:translate-x-2 transition border-l-4 border-orange-500 shadow-lg">
+                            <div class="text-xs font-bold uppercase tracking-wider text-orange-600 mb-2">Phase 5: Régulation</div>
+                            <h3 class="text-xl font-bold text-slate-900 mb-2">Encadrement juridique et premières régulations</h3>
+                            <p class="text-slate-600 text-sm leading-relaxed mb-3 text-justify">
+                                Les autorités (CNIL, UE) précisent les règles applicables : interdiction de certaines pratiques intrusives, rappel du RGPD, importance de la transparence et de la proportionnalité.
+                            </p>
+                            <div class="text-xs text-slate-500 border-t pt-2 mt-2">
+                                <strong>Acteurs :</strong> CNIL, Gouvernements, Négociations sociales. | <strong>Monde commun :</strong> En construction (accord sur l’encadrement, désaccord sur le degré de contrôle).
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="relative group">
-                    <div class="absolute left-1/2 transform -translate-x-1/2 -mt-3 z-10 w-6 h-6 bg-slate-800 rounded-full border-4 border-white shadow"></div>
+                    <div class="absolute left-1/2 transform -translate-x-1/2 -mt-3 z-10 w-8 h-8 bg-slate-900 rounded-full border-4 border-white shadow"></div>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-                        <div class="md:text-right">
-                            <span class="text-6xl font-extrabold text-slate-200 group-hover:text-slate-800 transition duration-500 font-serif">2025+</span>
-                        </div>
-                        <div class="glass-card p-8 rounded-2xl bg-slate-900 md:-ml-6 z-0 group-hover:translate-x-2 transition border-l-4 border-slate-600">
-                            <h3 class="text-xl font-bold text-white mb-2">L'Ère de l'IA Prédictive</h3>
-                            <p class="text-slate-400 text-sm leading-relaxed">
-                                Les outils évoluent vers l'analyse sentimentale (IA). On ne surveille plus seulement ce que vous faites, mais "comment vous vous sentez" (Predictive Retention). Le débat éthique change de dimension.
+                        <div class="glass-card p-6 rounded-2xl bg-slate-800 md:text-right md:-mr-6 z-0 group-hover:-translate-x-2 transition border-r-4 border-slate-600 md:order-1 order-2 shadow-xl">
+                            <div class="text-xs font-bold uppercase tracking-wider text-brand-light mb-2">Phase 6: L'Équilibre Hybride</div>
+                            <h3 class="text-xl font-bold text-white mb-2">Travail hybride et recherche d’un équilibre durable</h3>
+                            <p class="text-slate-400 text-sm leading-relaxed mb-3 text-justify">
+                                Le travail hybride s’installe. Certaines entreprises privilégient des pratiques transparentes, centrées sur les **objectifs** plutôt que sur le contrôle minutieux. La question centrale est : comment concilier performance, vie privée et confiance ?
                             </p>
+                            <div class="text-xs text-slate-500 border-t border-slate-700 pt-2 mt-2">
+                                <strong>Acteurs :</strong> Tous les acteurs. | <strong>Monde commun :</strong> En progrès (émergence d’un langage commun autour de la confiance).
+                            </div>
+                        </div>
+                        <div class="md:order-2 order-1 md:pl-6">
+                            <span class="text-6xl font-extrabold text-slate-200 group-hover:text-slate-600 transition duration-500 font-serif">2023–2025</span>
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
@@ -1182,6 +1267,7 @@
     </script>
 </body>
 </html>          
+
 
 
 
