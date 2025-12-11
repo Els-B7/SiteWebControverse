@@ -416,52 +416,173 @@
         <div class="container mx-auto px-6 max-w-6xl relative z-10">
             <h2 class="text-4xl font-bold text-center mb-16 font-serif">La Confrontation des Arguments</h2>
             
-            <div class="grid lg:grid-cols-2 gap-16">
-                <div class="space-y-8">
-                    <div class="flex items-center gap-4 mb-8">
-                        <div class="w-12 h-12 rounded-full bg-indigo-500 flex items-center justify-center text-xl font-bold shadow-lg shadow-indigo-500/50"><i class="fas fa-thumbs-up"></i></div>
-                        <h3 class="text-3xl font-bold text-indigo-400">Vision Managériale</h3>
+            <p class="text-slate-400 max-w-3xl mx-auto text-lg leading-relaxed">
+                    Analyse croisée basée sur le corpus documentaire : la logique de la donnée face à la réalité humaine.
+                </p>
+            </div>
+            
+            <div class="grid lg:grid-cols-2 gap-16 relative">
+                
+                <div class="hidden lg:block absolute left-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-transparent via-slate-700 to-transparent transform -translate-x-1/2"></div>
+
+                <div class="space-y-10">
+                    <div class="flex items-center gap-5 mb-10 border-b border-slate-800 pb-6">
+                        <div class="w-14 h-14 rounded-2xl bg-indigo-500/10 border border-indigo-500/30 flex items-center justify-center text-2xl text-indigo-400 shadow-[0_0_20px_rgba(99,102,241,0.2)]">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-3xl font-bold text-indigo-400">La Logique de Visibilité</h3>
+                            <p class="text-slate-500 text-xs uppercase tracking-widest font-semibold mt-1">Pourquoi surveiller ?</p>
+                        </div>
                     </div>
                     
-                    <div class="bg-slate-800 p-8 rounded-2xl border border-slate-700 hover:border-indigo-500 transition duration-300">
-                        <h4 class="text-xl font-bold text-white mb-3">1. La tyrannie de la distraction</h4>
-                        <p class="text-slate-400 text-sm leading-relaxed text-justify">
-                            Le salarié travaille depuis le confort de son foyer, un environnement où l'on retrouve toutes les distractions possibles. Sans surveillance, le risque de "cyber-loafing" (flânerie numérique) est réel.
+                    <div class="bg-brand-card/50 p-8 rounded-2xl border border-slate-700 hover:border-indigo-500 transition duration-300 group">
+                        <h4 class="text-xl font-bold text-white mb-3 group-hover:text-indigo-300 transition-colors">
+                            1. Combler l'invisibilité du travail
+                        </h4>
+                        <p class="text-slate-400 text-sm leading-relaxed text-justify mb-4">
+                            L'éloignement physique rend le travail "invisible". Pour optimiser les processus, l'entreprise utilise le <em>Workforce Analytics</em> afin d'objectiver l'activité réelle. Il ne s'agit plus de faire confiance, mais de mesurer la fragmentation des tâches et l'utilisation réelle des outils pour adapter l'organisation.
                         </p>
+                        <div class="mt-4 p-4 bg-slate-900/60 rounded-lg border-l-4 border-indigo-500/50">
+                            <div class="flex items-center gap-2 mb-2 text-indigo-400 text-xs font-bold uppercase"><i class="fas fa-microscope"></i> Exemple Terrain</div>
+                            <p class="text-xs text-slate-400 italic">
+                                L'étude technique de <strong>Kifor et al. (2021)</strong> sur des développeurs utilise des enregistreurs de frappe (keyloggers) pour révéler que si le temps de "codage pur" diminue, la plage horaire globale s'étend, justifiant une réorganisation des tâches.
+                            </p>
+                        </div>
                     </div>
 
-                    <div class="bg-slate-800 p-8 rounded-2xl border border-slate-700 hover:border-indigo-500 transition duration-300">
-                        <h4 class="text-xl font-bold text-white mb-3">2. L'équité avant tout</h4>
-                        <p class="text-slate-400 text-sm leading-relaxed text-justify">
-                            La surveillance est un moyen de garantir l'équité du temps de travail. Pourquoi payer le même salaire à celui qui travaille 7h et à celui qui regarde Netflix ? L'outil objective la performance.
+                    <div class="bg-brand-card/50 p-8 rounded-2xl border border-slate-700 hover:border-indigo-500 transition duration-300 group">
+                        <h4 class="text-xl font-bold text-white mb-3 group-hover:text-indigo-300 transition-colors">
+                            2. Le paradoxe de la protection (Santé)
+                        </h4>
+                        <p class="text-slate-400 text-sm leading-relaxed text-justify mb-4">
+                            L'employeur est tenu à une <strong>obligation de résultat</strong> concernant la santé. Le télétravail génère un "méta-travail" invisible (installations, gestion des bugs). Sans outils de mesure, l'employeur ne peut prouver qu'il contrôle la "charge de travail" (et non plus seulement la durée) pour prévenir le burn-out.
                         </p>
+                        <div class="mt-4 p-4 bg-slate-900/60 rounded-lg border-l-4 border-indigo-500/50">
+                            <div class="flex items-center gap-2 mb-2 text-indigo-400 text-xs font-bold uppercase"><i class="fas fa-scale-balanced"></i> Exemple Juridique</div>
+                            <p class="text-xs text-slate-400 italic">
+                                <strong>Nicolas (2024)</strong> démontre que la jurisprudence impose désormais d'évaluer la charge réelle. Une simple déclaration d'heures ne suffit plus à exonérer l'employeur en cas de risques psychosociaux.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="bg-brand-card/50 p-8 rounded-2xl border border-slate-700 hover:border-indigo-500 transition duration-300 group">
+                        <h4 class="text-xl font-bold text-white mb-3 group-hover:text-indigo-300 transition-colors">
+                            3. Sécurité et Continuité d'Activité
+                        </h4>
+                        <p class="text-slate-400 text-sm leading-relaxed text-justify mb-4">
+                            Dans les secteurs sensibles, le domicile est une faille de sécurité (réseaux non sécurisés, présence de tiers). La surveillance vise ici à protéger la propriété intellectuelle et les données clients contre les fuites, transformant le PC du salarié en une extension sécurisée et monitorée du bureau.
+                        </p>
+                        <div class="mt-4 p-4 bg-slate-900/60 rounded-lg border-l-4 border-indigo-500/50">
+                            <div class="flex items-center gap-2 mb-2 text-indigo-400 text-xs font-bold uppercase"><i class="fas fa-shield-alt"></i> Exemple Sectoriel</div>
+                            <p class="text-xs text-slate-400 italic">
+                                <strong>Meyer (2022)</strong> note que dans le secteur bancaire, la surveillance des écrans et des fichiers est justifiée par la conformité réglementaire, rendant le "panoptique" nécessaire pour éviter les fraudes.
+                            </p>
+                        </div>
                     </div>
                 </div>
 
-                <div class="space-y-8">
-                    <div class="flex items-center gap-4 mb-8">
-                        <div class="w-12 h-12 rounded-full bg-red-500 flex items-center justify-center text-xl font-bold shadow-lg shadow-red-500/50"><i class="fas fa-shield-alt"></i></div>
-                        <h3 class="text-3xl font-bold text-red-400">Vision Éthique</h3>
+                <div class="space-y-10">
+                    <div class="flex items-center gap-5 mb-10 border-b border-slate-800 pb-6 lg:flex-row-reverse text-right">
+                        <div class="w-14 h-14 rounded-2xl bg-rose-500/10 border border-rose-500/30 flex items-center justify-center text-2xl text-rose-400 shadow-[0_0_20px_rgba(244,63,94,0.2)]">
+                            <i class="fas fa-heart-crack"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-3xl font-bold text-rose-400">Le Coût Humain</h3>
+                            <p class="text-slate-500 text-xs uppercase tracking-widest font-semibold mt-1">Quels risques ?</p>
+                        </div>
                     </div>
                     
-                    <div class="bg-slate-800 p-8 rounded-2xl border border-slate-700 hover:border-red-500 transition duration-300">
-                        <h4 class="text-xl font-bold text-white mb-3">1. L'intrusion domestique</h4>
-                        <p class="text-slate-400 text-sm leading-relaxed text-justify">
-                            Ce contrôle efface la frontière entre vie professionnelle et vie personnelle. L'œil de l'employeur entre dans le salon, violant l'intimité du foyer, sanctuaire de la vie privée.
+                    <div class="bg-brand-card/50 p-8 rounded-2xl border border-slate-700 hover:border-rose-500 transition duration-300 group">
+                        <h4 class="text-xl font-bold text-white mb-3 group-hover:text-rose-300 transition-colors">
+                            1. Stress, Télépression et Hyperconnexion
+                        </h4>
+                        <p class="text-slate-400 text-sm leading-relaxed text-justify mb-4">
+                            La surveillance ne passe pas que par la caméra, mais par l'obligation de réponse immédiate sur les outils collaboratifs. Cette "télépression" crée une porosité toxique entre vie privée et vie pro, augmentant drastiquement la charge mentale.
+                        </p>
+                        <div class="mt-4 p-4 bg-slate-900/60 rounded-lg border-l-4 border-rose-500/50">
+                            <div class="flex items-center gap-2 mb-2 text-rose-400 text-xs font-bold uppercase"><i class="fas fa-bolt"></i> Exemple Psychosocial</div>
+                            <p class="text-xs text-slate-400 italic">
+                                <strong>Massart & Bobillier Chaumon (2021)</strong> révèlent que 50% des utilisateurs de <em>Workchat</em> l'utilisent hors horaires. Cette hyper-connexion est corrélée à une hausse significative du conflit travail-famille.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="bg-brand-card/50 p-8 rounded-2xl border border-slate-700 hover:border-rose-500 transition duration-300 group">
+                        <h4 class="text-xl font-bold text-white mb-3 group-hover:text-rose-300 transition-colors">
+                            2. Rupture de Confiance & Algo-résistance
+                        </h4>
+                        <p class="text-slate-400 text-sm leading-relaxed text-justify mb-4">
+                            L'usage de <em>bossware</em> signale une défiance qui brise le "contrat psychologique". En réaction, les salariés ne sont pas passifs : ils développent de l'"algo-résistance" pour tromper les métriques, privilégiant l'apparence de travail sur la qualité.
+                        </p>
+                        <div class="mt-4 p-4 bg-slate-900/60 rounded-lg border-l-4 border-rose-500/50">
+                            <div class="flex items-center gap-2 mb-2 text-rose-400 text-xs font-bold uppercase"><i class="fas fa-mask"></i> Exemple Comportemental</div>
+                            <p class="text-xs text-slate-400 italic">
+                                <strong>Bouquin (2021)</strong> et <strong>Venne (2024)</strong> décrivent l'usage de "bougeurs de souris" ou la fragmentation volontaire des tâches pour satisfaire les algorithmes sans produire de valeur réelle.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="bg-brand-card/50 p-8 rounded-2xl border border-slate-700 hover:border-rose-500 transition duration-300 group">
+                        <h4 class="text-xl font-bold text-white mb-3 group-hover:text-rose-300 transition-colors">
+                            3. Inégalités et Discriminations (Personnalité)
+                        </h4>
+                        <p class="text-slate-400 text-sm leading-relaxed text-justify mb-4">
+                            L'impact de la surveillance dépend des traits de personnalité. Une approche "taille unique" est discriminatoire car elle pénalise psychologiquement certains profils plus que d'autres, dégradant leur relation avec la hiérarchie.
+                        </p>
+                        <div class="mt-4 p-4 bg-slate-900/60 rounded-lg border-l-4 border-rose-500/50">
+                            <div class="flex items-center gap-2 mb-2 text-rose-400 text-xs font-bold uppercase"><i class="fas fa-users"></i> Exemple Scientifique</div>
+                            <p class="text-xs text-slate-400 italic">
+                                L'étude de <strong>Pilon & Provost Savard (2025)</strong> montre que les profils "Ouverts" (créatifs) perçoivent l'intrusivité bien plus violemment que les profils "Agréables", ce qui détériore leur relation LMX (Leader-Member Exchange).
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-24 pt-16 border-t border-slate-800/50">
+                <div class="text-center mb-16">
+                    <span class="inline-block py-1 px-3 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-bold uppercase tracking-wider mb-4">
+                        La Synthèse
+                    </span>
+                    <h3 class="text-3xl font-bold text-white font-serif">Vers une Régulation Négociée</h3>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="bg-gradient-to-br from-slate-800 to-slate-900 p-8 rounded-2xl border border-slate-700 hover:border-emerald-500 transition duration-300 group">
+                        <div class="w-12 h-12 bg-emerald-500/10 rounded-lg flex items-center justify-center text-emerald-400 text-xl mb-6 group-hover:scale-110 transition-transform">
+                            <i class="fas fa-bullseye"></i>
+                        </div>
+                        <h4 class="text-lg font-bold text-white mb-3">Changer d'Objet</h4>
+                        <p class="text-slate-400 text-xs leading-relaxed text-justify">
+                            Passer du contrôle des <em>comportements</em> (clics) au contrôle des <em>résultats</em> (objectifs). C'est le seul modèle compatible avec l'autonomie <strong>(Pontier 2014)</strong>.
                         </p>
                     </div>
 
-                    <div class="bg-slate-800 p-8 rounded-2xl border border-slate-700 hover:border-red-500 transition duration-300">
-                        <h4 class="text-xl font-bold text-white mb-3">2. L'impact Psychosocial</h4>
-                        <p class="text-slate-400 text-sm leading-relaxed text-justify">
-                            Cette intrusion renforce le stress et a des conséquences sur la santé mentale. Se savoir épié crée une anxiété permanente, dégrade la confiance et mène à une baisse paradoxale de la qualité du travail.
+                    <div class="bg-gradient-to-br from-slate-800 to-slate-900 p-8 rounded-2xl border border-slate-700 hover:border-emerald-500 transition duration-300 group">
+                        <div class="w-12 h-12 bg-emerald-500/10 rounded-lg flex items-center justify-center text-emerald-400 text-xl mb-6 group-hover:scale-110 transition-transform">
+                            <i class="fas fa-fingerprint"></i>
+                        </div>
+                        <h4 class="text-lg font-bold text-white mb-3">Tech Non-Intrusive</h4>
+                        <p class="text-slate-400 text-xs leading-relaxed text-justify">
+                            Utiliser des solutions comme <strong>TELESAFE (Zhang et al. 2025)</strong> : mesurer la consommation électrique globale pour détecter le surtravail sans espionner l'écran.
+                        </p>
+                    </div>
+
+                    <div class="bg-gradient-to-br from-slate-800 to-slate-900 p-8 rounded-2xl border border-slate-700 hover:border-emerald-500 transition duration-300 group">
+                        <div class="w-12 h-12 bg-emerald-500/10 rounded-lg flex items-center justify-center text-emerald-400 text-xl mb-6 group-hover:scale-110 transition-transform">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <h4 class="text-lg font-bold text-white mb-3">Espaces de Discussion</h4>
+                        <p class="text-slate-400 text-xs leading-relaxed text-justify">
+                            Sortir de l'impensé numérique via des <strong>EDD</strong> pour définir collectivement les règles du jeu et le droit à la déconnexion <strong>(De Carvalho 2024)</strong>.
                         </p>
                     </div>
                 </div>
             </div>
+
         </div>
     </section>
-
     <section id="expert" class="py-24 bg-white border-b border-slate-200">
         <div class="container mx-auto px-6 max-w-5xl">
             <div class="flex flex-col md:flex-row bg-slate-50 rounded-3xl overflow-hidden shadow-2xl border border-slate-200">
@@ -694,6 +815,7 @@
     </script>
 </body>
 </html>          
+
 
 
 
